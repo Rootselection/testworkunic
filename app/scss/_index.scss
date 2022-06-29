@@ -132,6 +132,7 @@
 }
 
 .steps {
+  overflow: hidden;
   padding: 123px 0 188px;
   position: relative;
   @media (max-width: $bp-s) {

@@ -18,9 +18,12 @@
     transform: translateX(-50%);
     width: 300px;
     z-index: -1;
+    @media (max-width: $bp-m) {
+      content: url('../images/header/decor-6--mobile.svg');
+      width: fit-content;
+      transform: translateX(0);
+    }
     @media (max-width: $bp-s) {
-      width: 120px;
-      bottom: 181px;
     }
 
     @media (max-width: $bp-s) {
