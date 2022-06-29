@@ -1,0 +1,154 @@
+.footer {
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  padding: 101px 0 79px;
+  background-color: $color-accent;
+  @media (max-width: $bp-m) {
+    padding: 46px 0 152px;
+  }
+  // .footer__inner
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @media (max-width: $bp-m) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+  }
+
+  // .footer__logo
+
+  &__logo {
+  }
+
+  &__logo-img--mobile {
+    display: none;
+    @media (max-width: $bp-m) {
+      display: inline-block;
+      margin-bottom: 37px;
+    }
+  }
+
+  // .footer__logo-img
+
+  &__logo-img {
+    @media (max-width: $bp-m) {
+      display: none;
+    }
+  }
+
+  // .footer__logo-name
+
+  &__logo-name {
+    margin-left: 8px;
+    @media (max-width: $bp-m) {
+      display: none;
+    }
+  }
+
+  // .footer__item
+
+  &__item {
+    margin-left: 120px;
+    @media (max-width: $bp-m) {
+      margin-left: 0;
+    }
+  }
+
+  // .footer__contacts
+
+  &__contacts {
+    @media (max-width: $bp-m) {
+      margin-bottom: 58px;
+    }
+  }
+
+  // .footer__contacts-item
+
+  &__contacts-item {
+    margin-bottom: 13px;
+    position: relative;
+    &:before{
+      content: url('../images/icons/viber.svg');
+      position: absolute;
+      left: -33px;
+    }
+  }
+
+  // .footer__contacts-link
+
+  &__contacts-link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform:capitalize;
+
+    color: #FFFFFF;
+  }
+
+  // .footer__email
+
+  &__email {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: lowercase;
+    color: #FFFFFF;
+    @media (max-width: $bp-m) {
+      order: 3;
+      text-align: left;
+      margin-right: 160px;
+    }
+
+  }
+
+  // .footer__social
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    margin-left: 0;
+    margin-top: -30px;
+    @media (max-width: $bp-m) {
+      margin-bottom: 41px;
+    }
+  }
+
+  // .footer__social-link
+
+  &__social-link {
+  }
+
+  // .footer__social-img
+
+  &__social-img {
+  }
+}
+.copy {
+  text-align: center;
+  margin-top: 120px;
+  font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    @media (max-width: $bp-m) {
+      margin-top: 40px;
+    }
+    @media (max-width: $bp-s) {
+      max-width: 280px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}

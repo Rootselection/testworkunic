@@ -1,0 +1,70 @@
+$color-main: #75E169;
+$color-second: #000;
+$color-accent: #67AEFC;
+$fs-title: 32px;
+$fs-text: 18px;
+
+%btn-null{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+// Break Points
+$minWidth: 320px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1170px;
+$bp-xl: $maxWidthContainer + 12px;
+$bp-l: 992px;
+$bp-m: 768px;
+$bp-s: 480px;
+$bp-xs: 375px;
+// Break Points
+%btn{
+  font-weight: 700;
+  font-size: 15px;
+  background-color: $color-main;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  &:hover{
+    border: 2px solid #fff; 
+  }
+  &:active,
+  &:focus{
+    background-color: #fff;
+    color: $color-accent;
+    border: 2px solid transparent;
+  }
+}
+%btn-white-bg{
+  font-weight: 700;
+  font-size: 15px;
+  background-color: $color-main;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  &:hover{
+    border: 2px solid $color-accent; 
+  }
+  &:active{
+    background-color: #fff;
+    color: $color-accent;
+    border: 2px solid $color-accent;
+  }
+}
+
+
+
+
+// %std-400{
+//     font-family: "Circular Std", sans-serif;
+//     font-weight: 400;
+// }
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
