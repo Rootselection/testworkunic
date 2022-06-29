@@ -329,6 +329,9 @@
         width: 25%;
         text-align: center;
         height: inherit;
+        @media (max-width: $bp-m) {
+          width: 100%;
+        }
       }
 
       .menu__link {

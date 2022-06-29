@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.min.css">
   <title>testwork</title>
 </head>
@@ -242,73 +243,79 @@
         Примеры онлайн-магазинов
       </h2>
       <div class="examples__wrapper swiper container">
-        <div class="examples__item">
-          <img class="examples__item-img" src="images/examples/slider/1.jpg" alt="example photo">
-          <div class="examples__item-hover">
-            <h3 class="examples__item-hover-title">
-              Онлайн-магазин
-            </h3>
-            <p class="examples__item-hover-subtitle">
-              для оптовых покупок
-            </p>
+        <div class="swiper-wrapper">
+          <div class="examples__item swiper-slide">
+            <img class="examples__item-img" src="images/examples/slider/1.jpg" alt="example photo">
+            <div class="examples__item-hover">
+              <h3 class="examples__item-hover-title">
+                Онлайн-магазин
+              </h3>
+              <p class="examples__item-hover-subtitle">
+                для оптовых покупок
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="examples__item">
-          <img class="examples__item-img" src="images/examples/slider/2.jpg" alt="example photo">
-          <div class="examples__item-hover">
-            <h3 class="examples__item-hover-title">
-              Онлайн-магазин
-            </h3>
-            <p class="examples__item-hover-subtitle">
-              для флористов
-            </p>
+          <div class="examples__item swiper-slide">
+            <img class="examples__item-img" src="images/examples/slider/2.jpg" alt="example photo">
+            <div class="examples__item-hover">
+              <h3 class="examples__item-hover-title">
+                Онлайн-магазин
+              </h3>
+              <p class="examples__item-hover-subtitle">
+                для флористов
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="examples__item">
-          <img class="examples__item-img" src="images/examples/slider/3.jpg" alt="example photo">
-          <div class="examples__item-hover">
-            <h3 class="examples__item-hover-title">
-              Онлайн-магазин
-            </h3>
-            <p class="examples__item-hover-subtitle">
-              для парикмахеров
-            </p>
+          <div class="examples__item swiper-slide">
+            <img class="examples__item-img" src="images/examples/slider/3.jpg" alt="example photo">
+            <div class="examples__item-hover">
+              <h3 class="examples__item-hover-title">
+                Онлайн-магазин
+              </h3>
+              <p class="examples__item-hover-subtitle">
+                для парикмахеров
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="examples__item">
-          <img class="examples__item-img" src="images/examples/slider/4.jpg" alt="example photo">
-          <div class="examples__item-hover">
-            <h3 class="examples__item-hover-title">
-              Онлайн-магазин
-            </h3>
-            <p class="examples__item-hover-subtitle">
-              для визажистов
-            </p>
+          <div class="examples__item swiper-slide">
+            <img class="examples__item-img" src="images/examples/slider/4.jpg" alt="example photo">
+            <div class="examples__item-hover">
+              <h3 class="examples__item-hover-title">
+                Онлайн-магазин
+              </h3>
+              <p class="examples__item-hover-subtitle">
+                для визажистов
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="examples__item">
-          <img class="examples__item-img" src="images/examples/slider/5.jpg" alt="example photo">
-          <div class="examples__item-hover">
-            <h3 class="examples__item-hover-title">
-              Онлайн-магазин
-            </h3>
-            <p class="examples__item-hover-subtitle">
-              для кондитеров
-            </p>
+          <div class="examples__item swiper-slide">
+            <img class="examples__item-img" src="images/examples/slider/5.jpg" alt="example photo">
+            <div class="examples__item-hover">
+              <h3 class="examples__item-hover-title">
+                Онлайн-магазин
+              </h3>
+              <p class="examples__item-hover-subtitle">
+                для кондитеров
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="examples__item">
-          <img class="examples__item-img" src="images/examples/slider/6.jpg" alt="example photo">
-          <div class="examples__item-hover">
-            <h3 class="examples__item-hover-title">
-              Онлайн-магазин
-            </h3>
-            <p class="examples__item-hover-subtitle">
-              для художников
-            </p>
-          </div>
-        </div>
+          <div class="examples__item swiper-slide">
+            <img class="examples__item-img" src="images/examples/slider/6.jpg" alt="example photo">
+            <div class="examples__item-hover">
+              <h3 class="examples__item-hover-title">
+                Онлайн-магазин
+              </h3>
+              <p class="examples__item-hover-subtitle">
+                для художников
+              </p>
+            </div>
 
+          </div>
+        </div>
+        <div class="swiper-button-prev"><svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 25L1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="swiper-button-next"><svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 25L13 13L1 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+      </div>
     </section>
     <section class="more">
       <div class="more__wrapper container">
@@ -429,7 +436,8 @@
 </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
 </html>

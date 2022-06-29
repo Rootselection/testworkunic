@@ -6,7 +6,7 @@ $('.icon-menu').on('click', function(){
 // Burger btn
 
 $('.steps__slider').slick({
-  infinite: true,
+  infinite: false,
   slidesToShow: 1,
   variableWidth: true,
   prevArrow: '<button class="slide-arrow prev-arrow"><svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 25L1 13L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>',
@@ -24,3 +24,22 @@ $('.steps__slider').slick({
     // },
   ]
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const width = window.innerWidth
+  if (width < 768){
+    const slider = new Swiper(".examples__wrapper",{
+      slidesPerView: 1,
+      grid: {
+        rows: 3,
+      },
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+    })
+  }
+});
+
